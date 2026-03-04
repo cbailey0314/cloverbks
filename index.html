@@ -1,144 +1,140 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clover Barrel &amp; Books — Coming Soon</title>
 
-  <!-- Elegant, restrained fonts (loads if you’re online) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    :root{
-      --bg: #e4e1d9;          /* warm stone */
-      --ink: #24352e;         /* deep evergreen */
-      --ink-soft: #4a5b53;    /* muted supporting text */
-      --sage: #9fb2a1;        /* refined sage */
-      --line: #c7c1b5;        /* soft brass-stone */
-    }
+<title>Clover BKS | Bookkeeping & Tax Support for the Four Corners Region</title>
 
-    *{ box-sizing:border-box; }
-    html,body{ height:100%; }
+<meta name="description" content="Clover BKS provides practical bookkeeping and tax support for individuals and small businesses across Southwest Colorado and the Four Corners region.">
 
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--ink);
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 
-    .page{
-      min-height:100vh;
-      display:flex;
-      flex-direction:column;
-    }
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
-    main{
-      flex:1;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding: clamp(32px, 5vw, 72px) 20px;
-      text-align:center;
-    }
+<style>
 
-    .panel{
-      max-width: 900px;
-      width: 100%;
-    }
+body{
+margin:0;
+font-family: Georgia, serif;
+background-image:url("/images/gradient-background.webp");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
 
-    .kicker{
-      text-transform:uppercase;
-      letter-spacing:.28em;
-      font-size: 13px;
-      color: var(--ink-soft);
-      margin: 0 0 18px;
-    }
+.container{
+max-width:700px;
+margin:80px auto;
+padding:50px 40px;
+background:white;
+border-radius:12px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
 
-    h1{
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: clamp(40px, 5.5vw, 58px);
-      font-weight: 600;
-      margin: 0 0 26px;
-      letter-spacing: .02em;
-    }
+.logo{
+width:220px;
+margin-bottom:10px;
+}
 
-    .logo{
-      width: clamp(130px, 18vw, 165px);
-      height: auto;
-      display:block;
-      margin: 0 auto 22px;
-      filter: drop-shadow(0 1px 0 #00000012);
-    }
+h1{
+font-size:38px;
+margin:10px 0;
+}
 
-    .bridge{
-      text-transform:uppercase;
-      letter-spacing:.16em;
-      font-size: 14px;
-      color: var(--ink-soft);
-      margin: 0 0 20px;
-    }
+.subtitle{
+font-size:20px;
+line-height:1.5;
+margin-bottom:20px;
+}
 
-    .rule{
-      width: 340px;
-      max-width: 72%;
-      height: 1px;
-      background: var(--line);
-      margin: 20px auto 22px;
-    }
+.description{
+font-size:17px;
+line-height:1.6;
+margin-bottom:25px;
+}
 
-    .headline{
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: clamp(28px, 4vw, 40px);
-      letter-spacing: .10em;
-      text-transform: uppercase;
-      line-height: 1.15;
-      margin: 0;
-    }
+button{
+background:#1e5f63;
+color:white;
+padding:14px 30px;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
 
-    .headline span{
-      display:block;
-      margin-top: 6px;
-    }
+button:hover{
+background:#16494c;
+}
 
-    footer{
-      background: var(--sage);
-      color: var(--ink);
-      font-size: 13px;
-      padding: 16px 20px;
-      text-align:center;
-      letter-spacing: .03em;
-    }
+.contact{
+margin-top:25px;
+font-size:16px;
+}
 
-    @media (max-width: 420px){
-      .bridge{ font-size: 13px; }
-      .kicker{ font-size: 12px; }
-    }
-  </style>
+a{
+color:#1e5f63;
+text-decoration:none;
+}
+
+footer{
+margin-top:20px;
+font-size:15px;
+}
+
+</style>
+
 </head>
 
 <body>
-  <div class="page">
-    <main>
-      <section class="panel" aria-label="Coming soon">
-        <p class="kicker">Coming Soon</p>
-        <h1>Clover Barrel &amp; Books</h1>
 
-        <!-- Your final logo (keep logo.png in the same folder as this file) -->
-        <img class="logo" src="logo.png" alt="Clover Barrel &amp; Books logo" />
+<div class="container">
 
-        <p class="bridge">From Prep to Pour</p>
-        <div class="rule" aria-hidden="true"></div>
+<img src="/images/clover-sm-logo.webp" class="logo">
 
-        <p class="headline">Clean Closes<span>Smooth Finishes</span></p>
-      </section>
-    </main>
+<h1>Clover BKS</h1>
 
-    <footer>
-      Thoughtful accounting and tax support for food and beverage businesses
-    </footer>
-  </div>
+<div class="subtitle">
+Bookkeeping & Tax Support for Individuals and Small Businesses in the Four Corners Region
+</div>
+
+<div class="description">
+Serving Durango, Cortez, Towaoc, and communities across Southwest Colorado and the Four Corners region, including Blanding, Utah.
+</div>
+
+<button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cbailey-cloverbks'});return false;">
+Schedule a Consultation
+</button>
+
+<div class="contact">
+
+<p>📞 970-233-1269</p>
+
+<p>
+<a href="mailto:cbailey@cloverbks.com">cbailey@cloverbks.com</a>
+</p>
+
+<p>
+<a href="https://www.facebook.com/CloverBKSLLC" target="_blank">Facebook</a>
+</p>
+
+</div>
+
+<footer>
+
+Practical • Confidential • Local Support
+
+</footer>
+
+</div>
+
+<script src="https://assets.calendly.com/assets/external/widget.js"></script>
+
 </body>
 </html>
