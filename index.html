@@ -2,90 +2,81 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Clover BKS | Bookkeeping & Tax Support for the Four Corners Region</title>
-
-<meta name="description" content="Clover BKS provides practical bookkeeping and tax support for individuals and small businesses across Southwest Colorado and the Four Corners region.">
-
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
-<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
-
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<title>Clover BKS, LLC</title>
 
 <style>
 
 body{
 margin:0;
-font-family: Georgia, serif;
-background-image:url("/images/gradient-background.webp");
+font-family:Georgia, serif;
+}
+
+.bks-background{
+background-image:url("images/bks-background.webp");
 background-size:cover;
 background-position:center;
-background-attachment:fixed;
+min-height:100vh;
+padding:20px;
 }
 
-.container{
-max-width:700px;
-margin:80px auto;
-padding:50px 40px;
-background:white;
+header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:rgba(236,222,218,0.9);
+padding:12px 20px;
 border-radius:12px;
-text-align:center;
-box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
-.logo{
-width:220px;
-margin-bottom:10px;
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
 }
 
-h1{
-font-size:38px;
-margin:10px 0;
+.bks-logo{
+width:44px;
+height:44px;
 }
 
-.subtitle{
-font-size:20px;
-line-height:1.5;
-margin-bottom:20px;
+.brand h1{
+font-family:"Allegin", serif;
+font-size:36px;
+margin:0;
 }
 
-.description{
-font-size:17px;
-line-height:1.6;
-margin-bottom:25px;
+nav{
+display:flex;
+align-items:center;
+gap:20px;
 }
 
-button{
-background:#1e5f63;
+nav a{
+text-decoration:none;
+color:#333;
+}
+
+.cta{
+background:#3f4634;
 color:white;
-padding:14px 30px;
-border:none;
-border-radius:6px;
-font-size:16px;
-cursor:pointer;
-}
-
-button:hover{
-background:#16494c;
-}
-
-.contact{
-margin-top:25px;
-font-size:16px;
-}
-
-a{
-color:#1e5f63;
+padding:10px 16px;
+border-radius:8px;
 text-decoration:none;
 }
 
-footer{
-margin-top:20px;
-font-size:15px;
+.services{
+margin-top:40px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+background:rgba(236,222,218,0.9);
+padding:20px;
+border-radius:16px;
 }
 
 </style>
@@ -94,47 +85,48 @@ font-size:15px;
 
 <body>
 
-<div class="container">
+<div class="bks-background">
 
-<img src="/images/clover-sm-logo.webp" class="logo">
+<header>
 
-<h1>Clover BKS</h1>
-
-<div class="subtitle">
-Bookkeeping & Tax Support for Individuals and Small Businesses in the Four Corners Region
+<div class="brand">
+<img src="images/bks-logo.png" class="bks-logo">
+<h1>Clover BKS, LLC</h1>
 </div>
 
-<div class="description">
-Serving Durango, Cortez, Towaoc, and communities across Southwest Colorado and the Four Corners region, including Blanding, Utah.
+<nav>
+<a href="#">Services</a>
+<a href="#">About</a>
+<a href="#">Service Area</a>
+<a href="#">Contact</a>
+
+<a class="cta" href="https://calendly.com/cbailey-cloverbks">
+Schedule a Free Consultation
+</a>
+</nav>
+
+</header>
+
+<div class="services">
+
+<div class="card">
+<h3>Bookkeeping</h3>
+<p>Customized monthly or quarterly support to keep your records organized, accurate, and ready for tax time.</p>
 </div>
 
-<button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cbailey-cloverbks'});return false;">
-Schedule a Consultation
-</button>
+<div class="card">
+<h3>Tax Support (Launching Soon)</h3>
+<p>Join the list for tax filing & payroll updates. In the meantime, we can help you get organized.</p>
+</div>
 
-<div class="contact">
-
-<p>📞 970-233-1269</p>
-
-<p>
-<a href="mailto:cbailey@cloverbks.com">cbailey@cloverbks.com</a>
-</p>
-
-<p>
-<a href="https://www.facebook.com/CloverBKSLLC" target="_blank">Facebook</a>
-</p>
+<div class="card">
+<h3>Small Business Support</h3>
+<p>Personalized, hands-on service for setting up systems, tracking income/expenses, and staying compliant.</p>
+</div>
 
 </div>
 
-<footer>
-
-Practical • Confidential • Local Support
-
-</footer>
-
 </div>
-
-<script src="https://assets.calendly.com/assets/external/widget.js"></script>
 
 </body>
 </html>
