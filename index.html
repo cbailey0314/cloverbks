@@ -163,7 +163,190 @@ margin-top:20px;
 font-size:14px;
 color:#555;
 }
+<style>
 
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+}
+
+body{
+background:#f4f5f3;
+color:#1f2a26;
+line-height:1.6;
+}
+  
+.hero{
+  background-image:url("images/bks-background.webp");
+  background-size:cover;
+  background-position:center;
+  padding:110px 20px 200px;
+  text-align:center;
+  position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(20,40,30,.45);
+}
+
+.hero-content{
+position:relative;
+max-width:900px;
+margin:auto;
+color:white;
+}
+
+.logo{
+width:300px;
+height:auto;
+display:block;
+margin:0 auto 24px auto;
+}
+
+.tagline{
+font-size:30px;
+font-weight:600;
+margin-bottom:16px;
+}
+
+.subtext{
+font-size:17px;
+opacity:.95;
+max-width:650px;
+margin:auto;
+margin-bottom:28px;
+}
+
+.cta-button{
+background:#2f5d50;
+color:white;
+padding:14px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+box-shadow:0 6px 14px rgba(0,0,0,.25);
+}
+
+.service-area{
+  background:#2f5d50;
+  color:white;
+  padding:20px;
+  border-radius:50px;
+  max-width:700px;
+  margin:-40px auto 50px;
+  text-align:center;
+  font-size:15px;
+
+  position:relative;
+  z-index:5;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:24px;
+padding:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:white;
+border-radius:16px;
+padding:28px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:20px;
+}
+
+.card p{
+font-size:15px;
+color:#4a5551;
+}
+
+.bite{
+max-width:1000px;
+margin:70px auto;
+padding:20px;
+text-align:center;
+}
+
+.bite h2{
+margin-bottom:10px;
+}
+
+.bite-title{
+font-size:22px;
+margin-bottom:30px;
+color:#2f5d50;
+font-weight:600;
+}
+
+.bite-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.bite-card{
+background:white;
+border-radius:14px;
+padding:20px;
+box-shadow:0 6px 14px rgba(0,0,0,.08);
+}
+
+.bite-card h3{
+margin-bottom:8px;
+}
+
+.bite-note{
+margin-top:20px;
+font-size:14px;
+color:#555;
+}
+
+/* CONTACT ICON STYLING */
+
+.contact{
+margin:80px auto;
+text-align:center;
+}
+
+.contact-icons{
+display:flex;
+justify-content:center;
+gap:30px;
+margin:30px 0;
+}
+
+.contact-icons svg{
+cursor:pointer;
+transition:transform .2s ease;
+}
+
+.contact-icons svg:hover{
+transform:scale(1.15);
+}
+
+.footer{
+margin-top:70px;
+text-align:center;
+padding:30px;
+font-size:14px;
+color:#6b746f;
+}
+
+</style>
 .footer{
 margin-top:70px;
 text-align:center;
@@ -266,26 +449,35 @@ The B.I.T.E.™ framework is part of a larger financial systems project develope
 
 <section class="contact">
 
-<h2>Contact</h2>
+<div class="contact-icons">
 
-<p>
-📞 <a href="tel:19702331269">(970) 233-1269</a>
-</p>
-
-<p>
-📘 <a href="https://www.facebook.com/CloverBKSLLC" target="_blank">
-facebook.com/CloverBKSLLC
+<a href="tel:19702331269" title="Phone">
+<svg width="36" height="36" viewBox="0 0 24 24" fill="#2f5d50">
+<path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.9.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.3 22 2 13.7 2 3c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.4.2 2.7.6 3.9.1.4 0 .8-.3 1.1l-2.1 1.8z"/>
+</svg>
 </a>
-</p>
 
-<p>
-<a href="https://calendly.com/cbailey-cloverbks" class="cta-button">
-Schedule Free 30-Minute Consultation
+<a href="mailto:cbailey@cloverbks.com" title="Email">
+<svg width="36" height="36" viewBox="0 0 24 24" fill="#2f5d50">
+<path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/>
+</svg>
 </a>
-</p>
 
-</section>
+<a href="https://www.facebook.com/CloverBKSLLC" target="_blank" title="Facebook">
+<svg width="36" height="36" viewBox="0 0 24 24" fill="#2f5d50">
+<path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12H17l-.4 3h-2.7v7A10 10 0 0022 12z"/>
+</svg>
+</a>
+
+</div>
 
 <div class="footer">
 Assisting Southwest Colorado since 2016
 </div>
+
+  
+  </section>
+  
+
+</body>
+</html>
