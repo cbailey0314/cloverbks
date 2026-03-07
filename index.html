@@ -185,7 +185,7 @@ transition:transform .2s ease;
 transform:scale(1.15);
 }
 
- .contact-icons a{
+.contact-icons a{
 display:inline-flex;
 align-items:center;
 justify-content:center;
@@ -196,21 +196,77 @@ border-radius:14px;
 box-shadow:0 6px 14px rgba(0,0,0,.08);
 }
 
-.footer{
+.site-footer{
 margin-top:70px;
+padding:30px 20px;
 text-align:center;
-padding:30px;
 font-size:14px;
 color:#6b746f;
+border-top:1px solid rgba(12,65,50,.12);
+background:#f2f3f4;
+}
+
+.footer-inner{
+max-width:1000px;
+margin:0 auto;
+}
+
+.site-footer p{
+margin:0 0 10px 0;
+color:#5a645f;
+}
+
+.footer-links{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:14px;
+}
+
+.footer-links a{
+color:#2f5d50;
+text-decoration:none;
+font-weight:600;
+}
+
+.footer-links a:hover{
+text-decoration:underline;
+}
+
+@media (max-width:600px){
+.logo{
+width:240px;
+}
+
+.tagline{
+font-size:24px;
+}
+
+.subtext{
+font-size:16px;
+}
+
+.service-area{
+border-radius:24px;
+padding:18px;
+font-size:14px;
+margin:-30px 16px 40px;
+}
+
+.contact-icons{
+gap:18px;
+}
+
+.site-footer{
+padding:24px 16px;
+}
 }
 
 </style>
 
-
 </head>
 
 <body>
-
 
 <section class="hero">
 
@@ -234,12 +290,10 @@ Schedule Free Consultation
 
 </section>
 
-
 <div class="service-area">
 <strong>Serving Southwest Colorado & the Four Corners</strong><br>
 Cortez • Dolores • Mancos • Towaoc • Durango • Farmington • Blanding
 </div>
-
 
 <section class="cards">
 
@@ -259,7 +313,6 @@ Cortez • Dolores • Mancos • Towaoc • Durango • Farmington • Blanding
 </div>
 
 </section>
-
 
 <section class="bite">
 
@@ -301,7 +354,6 @@ The B.I.T.E.™ framework is part of a larger financial systems project develope
 
 <div class="contact-icons">
 
-
 <a href="mailto:cbailey@cloverbks.com" title="Email">
 <svg width="36" height="36" viewBox="0 0 24 24" fill="#2f5d50">
 <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/>
@@ -324,10 +376,16 @@ The B.I.T.E.™ framework is part of a larger financial systems project develope
 
 </section>
 
-<div class="footer">
-Assisting Southwest Colorado since 2016
-</div>
- 
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>Clover BKS, LLC • Southwest Colorado • Calm, clear bookkeeping support</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Disclaimer</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
